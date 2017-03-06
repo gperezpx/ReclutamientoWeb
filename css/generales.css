@@ -1,0 +1,215 @@
+.header{
+	background-color: #0066a1;
+}
+.aside{
+  background-color: #204056;
+  color: #ffffff;
+}
+
+.content{
+  background-color: #DCDCDC;
+}
+
+.lines{
+    border: 7px solid white;
+}
+
+.Footer{
+	background-color: #0066a1;
+}
+
+.formulario{
+	background-color: #a5a9ab;
+  text-align: center;
+}
+
+
+.DivPrin{
+  padding: 20px 44px 20px;
+}
+.DivSec{
+  margin: 0 auto 25px;
+  padding: 20px 25px 30px;
+}
+.userLogo{
+  width: 96px;
+  height: 96px; 
+}
+.buton{
+  background-color: orange;
+  overflow: hidden;
+}
+.buton:hover{
+  background-color: gray;
+}
+.Warning
+{
+  color: #f00;
+  display: none;
+}
+.Valuer{
+  display:block;
+  padding-top: 2.5em;
+  padding-bottom: 0em;
+}
+
+  @media (max-width: 990px){/*SIRVE PARA LOS HORARIOS DE */
+    #Logo{
+      display: none;
+    }
+    .Valuer{
+      padding-top: 0.5em;
+    }
+
+  }
+.Formato-Footer{
+  text-align: center;
+  font-family: Century;
+  font-size: 14px;
+  color: #D7D7D8;
+}
+#Logo{
+      display: none;
+  }
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+       #Logo{
+      display: inline;
+      }
+      .aside{
+        min-height: 500px;
+      }
+      section .content{
+        min-height: 500px;
+      }
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+      .aside{
+        min-height: 500px;
+      }
+      section .content{
+        min-height: 500px;
+      }
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+      .aside{
+        min-height: 600px;
+      }
+      section .content{
+        min-height: 600px;
+    }
+    }
+
+textarea{
+  resize:none;
+}
+
+.logo{
+  width: 100px;
+  height: 80px;
+}
+/*Codigo para usar tooltips con el atributo data-tooltip*/
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-bottom: 5px;
+  margin-left: -80px;
+  padding: 7px;
+  width: 160px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #000;
+  background-color: hsla(0, 0%, 20%, 0.9);
+  color: #fff;
+  content: attr(data-tooltip);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  border-top: 5px solid #000;
+  border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.preguntas{
+  position: absolute;
+  top: 100px;
+  width: 100%;
+}
+
+.TiempoRestante{
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  background-color: #204056;
+  color: #ffffff;
+  display: inline;
+  z-index: 2
+}
+.file-upload {
+  position: relative;
+  overflow: hidden;
+  margin: 10px; }
+
+.file-upload input.file-input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0); }
